@@ -45,23 +45,23 @@ h1 {
     height: 570px;
     margin: 100px;
  }
-
 .columns div{
     height: 500px;
-    max-width: 1100px;
+    max-width: 800px;
     padding: 0px;
     
  }
 
  .columns .oval {
-    /*oval shape*/
     height: 50px;
     width: 150px;
     background-color: hsl(0, 0%, 95%);
     border-radius: 30px;
-    margin: 80px 0px 0px 40px;
+    margin: 0px 0px 40px 40px;
     padding-top: 13px;
     font-size: 16px;
+    position: absolute;
+    top: 65%;
     
 }
 
@@ -85,7 +85,6 @@ border-radius: 10px 0 0 10px;
 .sedan .oval {
     color: hsl(31, 77%, 52%);
     text-align: center;
-    margin-top: 32px;
 }
     
 .suvs {
@@ -166,12 +165,10 @@ img{
     }
 
     .columns .oval {
-        margin: 80px 50px 5px 25px ;
+        position: absolute;
+        top: 70%;
     }
 
-    .luxury .oval {
-        margin: 59px 50px 5px 25px;
-    }
 
     .attribution {
         margin-top: 650px;
@@ -203,12 +200,19 @@ img{
         margin: 1px;
     }
 
-    .columns .oval {
-        margin: 80px 50px 5px 25px ;
+    .suvs .oval {
+        position: absolute;
+        top: 24%
+    }
+
+    .suvs .oval {
+        position: absolute;
+        top: 156%
     }
 
     .luxury .oval {
-        margin: 59px 50px 5px 25px;
+        position: absolute;
+        top: 243%
     }
 
     .attribution {
@@ -217,4 +221,60 @@ img{
     .attribution br{
         display: inline-block;
       }
+}
+@media screen and (max-width: 400px) {
+    .columns {
+        max-width: 375px;
+        }
+
+    .columns .sedan {
+        border-radius: 0px;
+    }
+
+    .columns .luxury {
+        border-radius: 0px;
+    }
+    .columns img{
+        margin-bottom: 0px;
+        margin-top: 25px;
+    }
+    .columns h1 {
+        margin: 5px 1px 1px 0px
+    }
+
+    .columns p {
+        margin: 1px;
+    }
+
+    .columns .oval {
+        position: absolute;
+        left: -15%;
+    }
+    .suvs .oval {
+        position: absolute;
+        top: 24%
+    }
+
+    .suvs .oval {
+        position: absolute;
+        top: 156%
+    }
+
+    .luxury .oval {
+        position: absolute;
+        top: 243%
+    }
+
+    .attribution {
+        margin-top: 1700px;
+    }
+    .attribution br{
+        display: inline-block;
+      }
+}
+
+@media screen and (max-width: 300px){
+    .content .columns{
+        margin-left: 40px;
+    }
 }
