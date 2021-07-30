@@ -1,0 +1,219 @@
+* {
+    margin : 0px;
+    padding: 0px;
+
+
+}
+
+body {
+    
+    background-color: hsl(0, 0%, 95%);
+    font-family: 'Lexend Deca', sans-serif;
+ 
+  
+}
+p {
+    font-weight: 400;
+    font-size: 15px;
+    padding: 15px 50px 5px 40px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+h1 {
+    color: hsl(0, 0%, 95%);
+    margin: 50px 0px 50px 0px;
+    padding: 5px 0px 5px 40px;
+    font-weight: 700;
+    margin-top: 50px;
+   
+
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    height: 550px;
+}
+
+
+.columns {
+    position: absolute;
+    display: flex;
+    justify-content:  center;
+    height: 570px;
+    margin: 100px;
+ }
+.columns div{
+    height: 500px;
+    max-width: 1100px;
+    padding: 0px;
+    
+ }
+
+ .columns .oval {
+    /*oval shape*/
+    height: 50px;
+    width: 150px;
+    background-color: hsl(0, 0%, 95%);
+    border-radius: 30px;
+    margin: 80px 0px 0px 40px;
+    padding-top: 13px;
+    font-size: 16px;
+    
+}
+
+.columns .oval:active {
+    background-color: transparent;
+    border: 2px solid white ;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 16px;
+    padding-top: 11px;
+    transition: .5s;
+}
+
+
+.sedan {
+padding-right: 0px;
+background-color: hsl(31, 77%, 52%);
+border-radius: 10px 0 0 10px;
+}
+
+
+.sedan .oval {
+    color: hsl(31, 77%, 52%);
+    text-align: center;
+    margin-top: 104px;
+}
+    
+.suvs {
+    background-color: hsl(184, 100%, 22%);
+   
+}
+
+.suvs .oval {
+    color: hsl(184, 100%, 22%);
+    text-align: center;
+}
+
+.luxury{
+background-color: hsl(179, 100%, 13%);
+border-radius: 0px 10px 10px 0px;
+}
+
+.luxury .oval {
+    text-align: center;
+    color: hsl(179, 100%, 13%);
+}
+
+.luxury p {
+    margin-bottom: 0px;
+    padding: 15px 50px 5px 40px;
+}
+
+img{
+    margin: 50px 0px 30px 25px;
+}
+
+
+.attribution {
+ 
+    font-size: 11px;
+    text-align: center;
+    color: black;
+    position: absolute;
+    clear: left;
+    float: left;
+    margin-top: 650px;
+    font-size: large;
+    
+  }
+  
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+  .attribution br{
+    display: none;
+  }
+
+/*MOBILE VERSION*/
+@media screen and (max-width: 900px){
+    .columns {
+        position: absolute;
+        left: .0000000001%;
+        }
+
+    .columns .sedan {
+        border-radius: 10px 0px 0px 10px;
+    }
+
+    .columns .luxury {
+        border-radius: 0px 10px 10px 0px;
+    }
+    .columns img{
+        margin-bottom: 0px;
+        margin-top: 25px;
+    }
+    .columns h1 {
+        margin: 5px 1px 1px 0px
+    }
+
+    .columns p {
+        margin: 1px;
+    }
+
+    .columns .oval {
+        margin: 80px 50px 5px 25px ;
+    }
+
+    .luxury .oval {
+        margin: 59px 50px 5px 25px;
+    }
+
+    .attribution {
+        margin-top: 650px;
+    }
+
+
+}
+@media screen and (max-width: 500px){
+    .columns {
+        max-width: 375px;
+        }
+
+    .columns .sedan {
+        border-radius: 0px;
+    }
+
+    .columns .luxury {
+        border-radius: 0px;
+    }
+    .columns img{
+        margin-bottom: 0px;
+        margin-top: 25px;
+    }
+    .columns h1 {
+        margin: 5px 1px 1px 0px
+    }
+
+    .columns p {
+        margin: 1px;
+    }
+
+    .columns .oval {
+        margin: 80px 50px 5px 25px ;
+    }
+
+    .luxury .oval {
+        margin: 59px 50px 5px 25px;
+    }
+
+    .attribution {
+        margin-top: 1700px;
+    }
+    .attribution br{
+        display: inline-block;
+      }
+}
